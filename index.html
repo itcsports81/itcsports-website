@@ -197,6 +197,14 @@
   .gctrl button:hover { background:var(--navy); color:#fff; }
   @media (max-width:560px) { .gcap { font-size:14px; } .gnav { width:34px; height:34px; font-size:18px; } }
   @media (prefers-reduced-motion: reduce) { .gslide { transition:none; } }
+
+    .vids { display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:26px; }
+  .vid { background:#fff; border:1px solid #e4e7ef; border-radius:14px; padding:14px; }
+  .vid video { width:100%; border-radius:10px; background:#000; display:block; }
+  .vid h3 { font-size:17px; margin:12px 0 4px; }
+  .vid p { color:#5b6475; font-size:14px; }
+  .vid-len { display:inline-block; margin-top:8px; font-size:12px; font-weight:bold; color:#1fa84a; }
+  @media (max-width:760px) { .vids { grid-template-columns:1fr; } }
 </style>
 </head>
 <body>
@@ -209,6 +217,7 @@
       <li><a href="#themes">Themes</a></li>
       <li><a href="#pricing">Pricing</a></li>
       <li><a href="#faq">FAQ</a></li>
+      <li><a href="#training">Training</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     <a class="btn btn-green" href="#pricing">Get started</a>
@@ -330,6 +339,28 @@
         <div class="step"><h3>Start the match</h3><p>Set the toss, playing XI and overs.</p></div>
         <div class="step"><h3>Score ball by ball</h3><p>Update the score with one tap from your phone or laptop.</p></div>
         <div class="step"><h3>Add the overlay in vMix/OBS</h3><p>Live graphics appear on screen automatically.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAINING -->
+  <section id="training" class="alt">
+    <div class="wrap">
+      <h2>Training videos</h2>
+      <p class="lead">Short guides to set up your scoreboard. Watch once, then follow the steps on your own device.</p>
+      <div class="vids">
+        <div class="vid">
+          <video controls preload="metadata" playsinline src="videos/ITC-Sports-Training.mp4"></video>
+          <h3>Create a team, start a match and score</h3>
+          <p>Add teams and players, set up the match, score ball by ball, and get the vMix / OBS overlay link.</p>
+          <span class="vid-len">2:15</span>
+        </div>
+        <div class="vid">
+          <video controls preload="metadata" playsinline src="videos/ITC-Sports-Graphics-Training.mp4"></video>
+          <h3>Overlay setup and graphics</h3>
+          <p>Set position and options, copy the overlay URL, and show or hide graphics live.</p>
+          <span class="vid-len">0:32</span>
+        </div>
       </div>
     </div>
   </section>
